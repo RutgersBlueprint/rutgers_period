@@ -1,15 +1,5 @@
-<div class="h-screen flex flex-col min-h-screen">
+<div class="h-screen flex flex-col min-h-screen" style="overflow-y: hidden;">
   <app-nav-bar [className]="'h-32 sticky top-0'"></app-nav-bar>
-  <div
-    class="w-full h-full bg-blue-300 flex text-center items-center justify-center"
-  >
-    <p class="text-left font-bold text-white tracking-wider uppercase ">
-      <span style="font-size: 100px;">Rutgers</span><br />
-      <span style="font-size: 150px;">Period.</span><br />
-      <span class="normal-case font-normal" style="font-size: 50px;"
-        >Fighting period poverty</span
-      >
-    </p>
-  </div>
-  <!-- <router-outlet [className]="'h-full'"></router-outlet> -->
+  <!-- <app-landing [className]="'h-full w-screen'"></app-landing> -->
+  <router-outlet [className]="'h-full '"></router-outlet>
 </div>
