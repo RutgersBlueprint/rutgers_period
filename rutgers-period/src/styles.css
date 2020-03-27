@@ -35,3 +35,7 @@ html {
 .period-white {
   color: #f2f2f7;
 }
+
+.period-learn-more-list li {
+  margin: 18px;
+}
