@@ -21,7 +21,7 @@ html {
 }
 
 .period-standard-background-image {
-  background-image: url("./assets/background.png");
+  background-image: url("/assets/background.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
