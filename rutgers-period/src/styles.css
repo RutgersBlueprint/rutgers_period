@@ -1,4 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* all custom css styles will be found here */
+/* all other styling will be done with Tailwind library in-line css */
+
+/* TAILWIND CODE FORMAT
+  - Tailwind styling will be found in every ____.component.html file
+  - Tailwind styling should be of the form:
+    - class = " CUSTOM-CSS-CLASS WIDTH HEIGHT MARGIN PADDING FLEX FLEX-OPTIONS... OTHER-STYLING-OPTIONS..."
+    - example... class = "my-custom-class w-full h-64 mt-6 mr-4 px-12 flex flex-row justify-center text-xl bg-blue-500"
+*/
+
 html {
   font-family: "Montserrat", sans-serif;
 }

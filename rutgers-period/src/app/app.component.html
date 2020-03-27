@@ -1,9 +1,6 @@
 <div
-  class="website-background-image h-screen flex flex-col min-h-screen"
-  style="overflow-y: hidden;"
+  class="website-background-image w-screen h-screen min-h-screen flex flex-col overflow-y-hidden"
 >
-  <app-nav-bar [className]="'h-32 '"></app-nav-bar>
-
-  <!-- <app-landing [className]="'h-full w-screen'"></app-landing> -->
-  <router-outlet [className]="''"></router-outlet>
+  <app-nav-bar [className]="'h-32'"></app-nav-bar>
+  <router-outlet></router-outlet>
 </div>
