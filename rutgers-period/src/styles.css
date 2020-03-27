@@ -10,3 +10,11 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.website-background-image {
+  background-image: url("./assets/background.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
