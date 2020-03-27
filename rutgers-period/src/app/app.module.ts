@@ -8,6 +8,7 @@ import { LandingComponent } from "./pages/landing/landing.component";
 import { AboutComponent } from "./pages/about/about.component";
 import { LearnMoreComponent } from "./pages/learn-more/learn-more.component";
 import { EventsComponent } from "./pages/events/events.component";
+import { AboutTileMiniComponent } from './components/about-tile-mini/about-tile-mini.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EventsComponent } from "./pages/events/events.component";
     LandingComponent,
     AboutComponent,
     LearnMoreComponent,
-    EventsComponent
+    EventsComponent,
+    AboutTileMiniComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
