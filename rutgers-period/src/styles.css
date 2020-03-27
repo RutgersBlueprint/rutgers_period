@@ -12,7 +12,7 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-.period-background-image {
+.period-group-background-image {
   background-image: url("/assets/Group\ 21.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,10 +20,18 @@ html {
   background-size: cover;
 }
 
-.website-background-image {
+.period-standard-background-image {
   background-image: url("./assets/background.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.period-red {
+  color: #ef3b3c;
+}
+
+.period-white {
+  color: #f2f2f7;
 }
