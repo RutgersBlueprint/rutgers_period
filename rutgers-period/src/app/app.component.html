@@ -1,9 +1,15 @@
 <div
-  class="period-standard-background-image 
-  w-screen h-screen 
-  flex flex-col 
-  overflow-y-hidden"
+  class="
+  w-screen h-screen
+  flex flex-col"
 >
   <app-nav-bar [className]="'h-32'"></app-nav-bar>
-  <router-outlet [className]=""></router-outlet>
+  <div class="h-auto overflow-y-scroll">
+    <app-landing></app-landing>
+    <div class="period-standard-background-image h-full ">
+      <app-about></app-about>
+      <app-learn-more></app-learn-more>
+    </div>
+  </div>
+  <!-- <router-outlet [className]=""></router-outlet> -->
 </div>
