@@ -1,10 +1,43 @@
 <div class="w-screen h-screen flex flex-col">
-  <app-nav-bar [className]="'h-32'"></app-nav-bar>
+  <nav
+    class="h-32 w-screen flex flex-row items-end justify-between bg-gray-100 shadow-xl"
+    style="background-color: white;"
+  >
+    <div class="mx-6 mb-4 h-24 w-3/12 flex flex-row">
+      <div class="relative w-5/12">
+        <button [ngxScrollTo]="'landingSection'">
+          <img class="absolute h-full" src="../../../assets/period_logo.png" />
+        </button>
+      </div>
+      <div class="w-7/12 flex flex-row items-center">
+        <a href="https://www.instagram.com/ruperiod/?hl=en" target="_blank"
+          ><img class="w-16 h-16 mr-6" src="../../../assets/instagram_logo.png"
+        /></a>
+        <a
+          ><img class="w-16 h-16 mr-6" src="../../../assets/email_logo.png"
+        /></a>
+      </div>
+    </div>
+    <div
+      class="mx-6 mb-4 h-16 w-auto flex justify-around text-black uppercase tracking-wider"
+      style="font-size: 35px;"
+    >
+      <button class="font-bold" [ngxScrollTo]="'aboutSection'" class="mx-4">
+        <p class="font-bold uppercase">about</p>
+      </button>
+      <button [ngxScrollTo]="'learnMoreSection'" class="mx-4">
+        <p class="font-bold uppercase">learn more</p>
+      </button>
+      <button [ngxScrollTo]="'eventsSection'" class="mx-4">
+        <p class="font-bold uppercase">events</p>
+      </button>
+    </div>
+  </nav>
   <div class="h-auto overflow-y-scroll overflow-x-hidden">
-    <app-landing></app-landing>
+    <app-landing id="landingSection"></app-landing>
     <div class="period-standard-background-image h-full">
-      <app-about></app-about>
-      <app-learn-more></app-learn-more>
+      <app-about id="aboutSection"></app-about>
+      <app-learn-more id="learnMoreSection"></app-learn-more>
     </div>
   </div>
   <!-- <router-outlet [className]=""></router-outlet> -->
