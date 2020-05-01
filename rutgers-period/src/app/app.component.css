@@ -1,0 +1,144 @@
+.instagramButton:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.emailButton img {
+  z-index: 999;
+}
+
+.emailButton {
+  background: transparent;
+  width: auto;
+  border-radius: 50px;
+}
+
+.emailButton:hover {
+  background: #ef3b3c;
+}
+
+.emailButton span {
+  margin-right: 0px;
+  display: inline-block;
+  position: relative;
+  visibility: none;
+  color: #f2f2f7;
+  left: -40px;
+  width: 0;
+  opacity: 0;
+  text-align: center;
+  transition: all 1s;
+}
+
+.emailButton:hover {
+  cursor: pointer;
+}
+
+.emailButton:hover span {
+  right: 0;
+  visibility: visible;
+  margin-right: 10px;
+  opacity: 1;
+  width: 350px;
+}
+
+/* .emailButton:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.emailButton:hover {
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transition-duration: 200ms;
+}
+
+.emailButton:checked + .emailButton {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform: scale(1, 1) translate3d(0, 0, 0);
+  width: 350px;
+  border-radius: 50px;
+}
+
+a {
+  color: inherit;
+}
+.menu {
+  filter: url("#shadowed-goo");
+}
+.menu-item,
+.menu-open-button {
+  background: #ef3b3c;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  color: #f2f2f7;
+  text-align: center;
+  line-height: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+.menu-open {
+  display: none;
+}
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  transition: transform 200ms;
+  background-image: url("../assets/email_logo.png");
+}
+.menu {
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  padding-top: 20px;
+  padding-left: 80px;
+  width: 650px;
+  height: 150px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+}
+.menu-item:nth-child(3) {
+  transition-duration: 180ms;
+}
+.menu-open-button {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform: scale(1, 1) translate3d(0, 0, 0);
+  width: 350px;
+  border-radius: 50px;
+}
+.hamburger-1 {
+  transform: translate3d(0, -8px, 0);
+}
+.hamburger-3 {
+  transform: translate3d(0, 8px, 0);
+}
+.hamburger-3:before {
+  content: "'s task - ";
+}
+
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  transform: translate3d(0, 0, 0) scale(0.1, 1);
+} */

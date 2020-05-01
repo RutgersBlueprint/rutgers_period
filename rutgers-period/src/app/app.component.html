@@ -3,19 +3,30 @@
     class="h-32 w-screen flex flex-row items-end justify-between bg-gray-100 shadow-xl"
     style="background-color: white;"
   >
-    <div class="mx-6 mb-4 h-24 w-3/12 flex flex-row">
-      <div class="relative w-5/12">
+    <div class="mx-6 mb-4 h-24 w-6/12 flex flex-row">
+      <div class="relative w-3/12">
         <button [ngxScrollTo]="'landingSection'">
           <img class="absolute h-full" src="../../../assets/period_logo.png" />
         </button>
       </div>
-      <div class="w-7/12 flex flex-row items-center">
-        <a href="https://www.instagram.com/ruperiod/?hl=en" target="_blank"
-          ><img class="w-16 h-16 mr-6" src="../../../assets/instagram_logo.png"
-        /></a>
+      <div class="w-9/12 flex flex-row items-center">
         <a
-          ><img class="w-16 h-16 mr-6" src="../../../assets/email_logo.png"
-        /></a>
+          href="https://www.instagram.com/ruperiod"
+          target="_blank"
+          class="emailButton flex flex-row justify-center items-center"
+          ><img
+            class="w-16 h-full mr-6"
+            src="../../../assets/instagram_logo.png"
+          /><span>https://www.instagram.com/ruperiod</span></a
+        >
+        <a
+          href="mailto:ruperiod@gmail.com"
+          class="emailButton flex flex-row justify-center items-center"
+          ><img
+            class="w-16 h-full mr-6"
+            src="../../../assets/email_logo.png"
+          /><span>myemail@mysuperemaildomain.com</span></a
+        >
       </div>
     </div>
     <div
@@ -40,5 +51,60 @@
       <app-learn-more id="learnMoreSection"></app-learn-more>
     </div>
   </div>
+
+  <nav>
+    <ul>
+      <a><li></li></a>
+    </ul>
+  </nav>
+
+  <!-- <nav class="menu">
+    <input
+      type="checkbox"
+      href="#"
+      class="menu-open"
+      name="menu-open"
+      id="menu-open"
+    />
+    <label class="menu-open-button" for="menu-open">
+      <img class="w-16 h-16 m-2" src="../../../assets/email_logo.png" />
+      <span class="hamburger hamburger-3"></span>
+    </label>
+  </nav>
+
+  <svg>
+    <defs>
+      <filter id="shadowed-goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix
+          in="blur"
+          mode="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+          result="goo"
+        />
+        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+        <feColorMatrix
+          in="shadow"
+          mode="matrix"
+          values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+          result="shadow"
+        />
+        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+        <feComposite in2="shadow" in="goo" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix
+          in="blur"
+          mode="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+          result="goo"
+        />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+  </svg>
+  -->
   <!-- <router-outlet [className]=""></router-outlet> -->
 </div>

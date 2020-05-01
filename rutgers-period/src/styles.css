@@ -40,3 +40,7 @@ html {
 .period-learn-more-list li {
   margin: 18px;
 }
+
+button {
+  outline-style: none;
+}
