@@ -1,8 +1,4 @@
-<div
-  class="w-screen h-screen
-  flex flex-col items-center justify-start
-  "
->
+<div class="w-screen h-full flex flex-col items-center justify-start">
   <div class="w-screen mt-6">
     <p class="text-6xl uppercase font-bold text-center tracking-wider">
       Learn More
@@ -24,7 +20,7 @@
   </div>
 
   <div class="w-8/12 p-6 flex flex-row justify-around bg-blue-300">
-    <div class="w-7/12 pl-10 pr-16  py-4 bg-green-400">
+    <div class="w-7/12 pl-10 pr-16 py-4 bg-green-400">
       <p class="text-left period-red font-bold text-5xl">Title</p>
       <p class="text-left text-xl">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -39,7 +35,7 @@
 
   <div class="w-8/12 p-6 flex flex-row justify-around bg-blue-300">
     <div class="w-5/12 bg-gray-300"></div>
-    <div class="w-7/12 pl-10 pr-16  py-4 bg-green-400">
+    <div class="w-7/12 pl-10 pr-16 py-4 bg-green-400">
       <p class="text-left period-red font-bold text-5xl">Title</p>
       <p class="text-left text-xl">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -51,9 +47,12 @@
     </div>
   </div>
 
-  <div class="w-8/12 my-48 px-12">
+  <div class="w-8/12 my-48">
     <p class="text-center period-red text-5xl font-bold">Some more facts...</p>
-    <ul class="period-learn-more-list list-decimal text-xl italic">
+    <ul
+      class="period-learn-more-list list-decimal text-xl italic px-12"
+      style="height: 800px; overflow-y: scroll;"
+    >
       <li>
         31 states in the United States still charge a sales tax (“pink” tax) on
         feminine hygiene products like pads and tampons.
