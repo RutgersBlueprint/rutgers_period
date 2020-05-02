@@ -1,49 +1,4 @@
-<div class="w-screen h-screen flex flex-col">
-  <nav
-    class="h-32 w-screen flex flex-row items-end justify-between bg-gray-100 shadow-xl"
-    style="background-color: white;"
-  >
-    <div class="mx-6 mb-4 h-24 w-6/12 flex flex-row">
-      <div class="relative w-3/12">
-        <button [ngxScrollTo]="'landingSection'">
-          <img class="absolute h-full" src="../../../assets/period_logo.png" />
-        </button>
-      </div>
-      <div class="w-9/12 flex flex-row items-center">
-        <a
-          href="https://www.instagram.com/ruperiod"
-          target="_blank"
-          class="emailButton flex flex-row justify-center items-center"
-          ><img
-            class="w-16 h-full mr-6"
-            src="../../../assets/instagram_logo.png"
-          /><span class="font-bold">https://www.instagram.com/ruperiod</span></a
-        >
-        <a
-          href="mailto:ruperiod@gmail.com"
-          class="emailButton flex flex-row justify-center items-center"
-          ><img
-            class="w-16 h-full mr-6"
-            src="../../../assets/email_logo.png"
-          /><span class="font-bold">myemail@mysuperemaildomain.com</span></a
-        >
-      </div>
-    </div>
-    <div
-      class="period-nav-right mx-6 mb-4 h-16 w-auto flex justify-around text-black uppercase tracking-wider"
-      style="font-size: 35px;"
-    >
-      <button [ngxScrollTo]="'aboutSection'" class="mx-4">
-        <p class="font-bold uppercase">about</p>
-      </button>
-      <button [ngxScrollTo]="'learnMoreSection'" class="mx-4">
-        <p class="font-bold uppercase">learn more</p>
-      </button>
-      <button [ngxScrollTo]="'eventsSection'" class="mx-4">
-        <p class="font-bold uppercase">events</p>
-      </button>
-    </div>
-  </nav>
+<div class="w-screen h-screen">
   <div class="h-auto overflow-y-scroll overflow-x-hidden">
     <app-landing id="landingSection"></app-landing>
     <div class="period-standard-background-image h-full flex flex-col">
@@ -54,16 +9,14 @@
         class="h-auto w-full flex flex-col justify-center items-center"
       >
         <div class="w-screen mt-6">
-          <p class="text-6xl uppercase font-bold text-center tracking-wider">
+          <p class="text-4xl uppercase font-bold text-center tracking-wider">
             Events
           </p>
         </div>
         <iframe
-          class="p-6"
+          class="p-6 w-11/12 h-64"
           src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=eGF2aWVyLmEubGFyb3NhQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=dGEzMzFpYnBnaDc0cDNvb3BpbjMxZ2FiOWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%23F09300&amp;color=%230B8043"
           style="border-width: 0;"
-          width="1000"
-          height="700"
           frameborder="0"
           scrolling="no"
         ></iframe>
