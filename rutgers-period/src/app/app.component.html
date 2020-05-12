@@ -1,4 +1,56 @@
 <div class="w-screen h-screen">
+  <div class="flex flex-row"></div>
+  <nav
+    class="flex items-center justify-between flex-wrap pt-6 pr-6 pl-6 pb-3 shadow-xl sticky top-0 absolute bg-white"
+  >
+    <div class="bg-blue-400">
+      <button [ngxScrollTo]="'landingSection'" class="logoButton bg-blue-400">
+        button
+      </button>
+    </div>
+
+    <div class="block lg:hidden">
+      <button
+        (click)="toggle()"
+        id="show-menu"
+        class="flex items-center px-3 py-2 border rounded"
+      >
+        <fa-icon [icon]="['fas', 'bars']"></fa-icon>
+      </button>
+    </div>
+    <div
+      id="main-menu"
+      class="w-full lg:block flex-grow lg:overflow-y-auto lg:flex lg:items-center lg:w-auto bg-white main-menu-slider pl-4 pr-4 sticky top-0"
+    >
+      <div class="text-sm flex flex-col items-start lg:block">
+        <button
+          [ngxScrollTo]="'aboutSection'"
+          class="mx-4 mt-4 block lg:inline-block lg:mt-0 font-bold uppercase"
+        >
+          <p class="">
+            about
+          </p>
+        </button>
+        <button
+          [ngxScrollTo]="'learnMoreSection'"
+          class="mx-4 mt-4 block lg:inline-block lg:mt-0 font-bold uppercase"
+        >
+          <p class="">
+            learn more
+          </p>
+        </button>
+        <button
+          [ngxScrollTo]="'eventsSection'"
+          class="mx-4 mt-4 block lg:inline-block lg:mt-0 font-bold uppercase"
+        >
+          <p class="">
+            events
+          </p>
+        </button>
+      </div>
+    </div>
+  </nav>
+
   <div class="h-auto overflow-y-scroll overflow-x-hidden">
     <app-landing id="landingSection"></app-landing>
     <div class="period-standard-background-image h-full flex flex-col">
@@ -8,13 +60,15 @@
         id="eventsSection"
         class="h-auto w-full flex flex-col justify-center items-center"
       >
-        <div class="w-screen mt-6">
-          <p class="text-4xl uppercase font-bold text-center tracking-wider">
+        <div class="w-screen mt-24">
+          <p
+            class="period-calendar-title text-4xl uppercase font-bold text-center tracking-wider"
+          >
             Events
           </p>
         </div>
         <iframe
-          class="p-6 w-11/12 h-64"
+          class="period-calendar mt-12 mb-24"
           src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=eGF2aWVyLmEubGFyb3NhQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=dGEzMzFpYnBnaDc0cDNvb3BpbjMxZ2FiOWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%23F09300&amp;color=%230B8043"
           style="border-width: 0;"
           frameborder="0"

@@ -8,7 +8,12 @@ import { LandingComponent } from "./pages/landing/landing.component";
 import { AboutComponent } from "./pages/about/about.component";
 import { LearnMoreComponent } from "./pages/learn-more/learn-more.component";
 import { EventsComponent } from "./pages/events/events.component";
-import { AboutTileMiniComponent } from './components/about-tile-mini/about-tile-mini.component';
+import { AboutTileMiniComponent } from "./components/about-tile-mini/about-tile-mini.component";
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from "@fortawesome/angular-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 @NgModule({
   declarations: [
@@ -18,10 +23,14 @@ import { AboutTileMiniComponent } from './components/about-tile-mini/about-tile-
     AboutComponent,
     LearnMoreComponent,
     EventsComponent,
-    AboutTileMiniComponent
+    AboutTileMiniComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private library: FaIconLibrary) {
+    library.addIcons(faBars);
+  }
+}

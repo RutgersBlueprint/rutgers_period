@@ -19,10 +19,12 @@ html {
 
 .period-group-background-image {
   background-image: url("/assets/Group\ 21.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.period-calendar {
+  width: 900px;
+  height: 700px;
 }
 
 .period-standard-background-image {
@@ -47,4 +49,44 @@ html {
 
 button {
   outline-style: none;
+}
+
+@media (max-width: 900px) {
+  .period-calendar {
+    visibility: hidden;
+  }
+
+  .period-calendar-title {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-menu-slider {
+    transition: height 400ms ease;
+    height: 0px;
+    overflow-y: hidden;
+  }
+
+  .main-menu-slider.expanded {
+    height: 125px;
+  }
+
+  .period-calendar {
+    width: 800px;
+    height: 400px;
+  }
+
+  .period-group-background-image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .period-group-background-image {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
