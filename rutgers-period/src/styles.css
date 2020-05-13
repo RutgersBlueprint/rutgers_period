@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.period-icons {
+  visibility: visible;
+}
+
 .period-nav-right button {
   outline: none;
 }
@@ -79,6 +83,11 @@ button {
 
   .period-group-background-image {
     height: 300px;
+  }
+
+  .period-icons {
+    visibility: hidden;
+    width: 0px;
   }
 }
 
