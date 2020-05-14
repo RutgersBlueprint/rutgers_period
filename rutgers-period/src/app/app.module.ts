@@ -14,6 +14,7 @@ import {
   FaIconLibrary,
 } from "@fortawesome/angular-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { ScrollToModule } from "@nicky-lenaers/ngx-scroll-to";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
     EventsComponent,
     AboutTileMiniComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    ScrollToModule.forRoot(),
+  ],
+  exports: [ScrollToModule],
   providers: [],
   bootstrap: [AppComponent],
 })
