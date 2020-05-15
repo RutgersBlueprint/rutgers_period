@@ -1,9 +1,9 @@
 <div class="w-screen h-screen overflow-x-hidden">
   <nav
-    class="flex items-center lg:items-end justify-between flex-wrap pt-6 pr-6 pl-6 pb-3 shadow-xl sticky top-0 absolute bg-white"
+    class="flex items-center lg:items-end justify-between flex-wrap pt-6 pr-6 pl-6 pb-3 shadow-xl sticky top-0 fixed bg-white"
   >
     <div class="w-auto flex flex-row">
-      <button [ngxScrollTo]="'landingSection'" class="logoButton bg-green-600">
+      <button [ngxScrollTo]="'landingSection'" class="logoButton">
         <img class="" src="../assets/period_logo.png" />
       </button>
     </div>
@@ -27,7 +27,7 @@
       >
     </div>
 
-    <div class="block lg:hidden bg-red-400">
+    <div class="block lg:hidden">
       <button
         (click)="toggle()"
         id="show-menu"
@@ -86,7 +86,7 @@
       </div>
     </div>
   </nav>
-  <div class="h-auto overflow-y-scroll overflow-x-hidden">
+  <div class="h-auto overflow-x-hidden">
     <app-landing id="landingSection"></app-landing>
     <div class="period-standard-background-image h-full flex flex-col">
       <app-about id="aboutSection"></app-about>
