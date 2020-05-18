@@ -8,6 +8,14 @@
     - example... class = "my-custom-class w-full h-64 mt-6 mr-4 px-12 flex flex-row justify-center text-xl bg-blue-500"
 */
 
+button:focus {
+  outline: 0;
+}
+
+.about-tab:after {
+  color: #ef3b3c;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
@@ -27,7 +35,7 @@ html {
 }
 
 .period-calendar {
-  width: 900px;
+  width: 1100px;
   height: 700px;
 }
 
