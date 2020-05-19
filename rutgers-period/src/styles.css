@@ -12,8 +12,8 @@ button:focus {
   outline: 0;
 }
 
-.about-tab:after {
-  color: #ef3b3c;
+#period-logo {
+  height: 150px;
 }
 
 html {
@@ -96,6 +96,10 @@ button {
   .period-icons {
     visibility: hidden;
     width: 0px;
+  }
+
+  #period-logo {
+    height: 100px;
   }
 }
 
