@@ -66,14 +66,16 @@ button {
 @media (max-width: 900px) {
   .period-calendar {
     visibility: hidden;
+    width: 10px;
+    height: 10px;
   }
 
-  .period-calendar-title {
-    visibility: hidden;
+  #calendar-notice {
+    visibility: visible;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1090px) {
   .main-menu-slider {
     transition: height 400ms ease;
     height: 0px;
