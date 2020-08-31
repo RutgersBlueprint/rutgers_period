@@ -1,6 +1,6 @@
-<div class="w-screen h-screen overflow-x-hidden" >
+<div class="w-screen h-screen overflow-x-hidden">
   <nav
-  #periodContainer
+    #periodContainer
     class="flex items-center lg:items-end justify-between flex-wrap pt-6 pr-6 pl-6 pb-3 shadow-xl sticky top-0 bg-white"
   >
     <div class="w-auto flex flex-row">
@@ -42,7 +42,7 @@
       </button>
     </div>
     <div
-    #mainMenu
+      #mainMenu
       id="main-menu"
       class="w-full flex-grow lg:overflow-y-auto lg:flex lg:items-center lg:flex-row lg:justify-end lg:w-auto bg-white main-menu-slider pl-4 pr-4 sticky top-0"
     >
@@ -54,37 +54,31 @@
           [ngxScrollToOffset]="-150"
           class="mx-4 mt-4 lg:mt-0 font-bold uppercase"
         >
-          <p class="">
-            about
-          </p>
+          <p class="">about</p>
         </button>
         <button
           [ngxScrollTo]="'learn'"
           [ngxScrollToOffset]="-150"
           class="mx-4 mt-4 lg:mt-0 font-bold uppercase"
         >
-          <p class="">
-            learn more
-          </p>
+          <p class="">learn more</p>
         </button>
         <button
           [ngxScrollTo]="'events'"
           [ngxScrollToOffset]="-150"
           class="mx-4 mt-4 lg:mt-0 font-bold uppercase"
         >
-          <p class="">
-            events
-          </p>
+          <p class="">events</p>
         </button>
         <a
           href="https://www.instagram.com/ruperiod"
           target="_blank"
-          class="mx-4 mt-4 lg:mt-0 font-bold uppercase visible w-auto lg:hidden"
+          class="mx-4 mt-4 lg:mt-0 font-bold uppercase block w-auto lg:hidden"
           >instagram</a
         >
         <a
           href="mailto:ruperiod@gmail.com"
-          class="mx-4 mt-4 lg:mt-0 font-bold uppercase visible w-auto lg:hidden"
+          class="mx-4 mt-4 lg:mt-0 font-bold uppercase block w-auto lg:hidden"
           >ruperiod@gmail.com</a
         >
       </div>
@@ -111,17 +105,31 @@
           Events
         </p>
       </div>
-      <div id = "calendar-notice" class="lg:invisible md:invisible visible mt-16 text-center">
-        <h1>Sorry! <br>Events calendar is only visible in the Desktop version.</h1>
+      <div
+        id="calendar-notice"
+        class="lg:hidden md:hidden block mt-16 text-center"
+      >
+        <h1>
+          Sorry! <br />Events calendar is only visible in the Desktop version.
+        </h1>
+        <h2>
+          Or you can view the public
+          <a
+            target="_blank"
+            href="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
+            class="font-bold text-blue-600 hover:underline"
+            >Google Calendar</a
+          >
+        </h2>
       </div>
+
       <iframe
         class="period-calendar mt-12 mb-24"
-        src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=eGF2aWVyLmEubGFyb3NhQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=dGEzMzFpYnBnaDc0cDNvb3BpbjMxZ2FiOWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%23F09300&amp;color=%230B8043"
-        style="border-width: 0;"
+        src="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
+        style="border-width: 0"
         frameborder="0"
         scrolling="no"
       ></iframe>
-      
     </div>
   </div>
 </div>
