@@ -1,4 +1,4 @@
-import { Component, HostListener } from "@angular/core";
+import { Component, HostListener, ViewChild, ElementRef } from "@angular/core";
 
 @Component({
   selector: "app-root",
@@ -6,7 +6,9 @@ import { Component, HostListener } from "@angular/core";
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
+  @ViewChild('mobileMenu') mobileMenu: ElementRef
   isDesktop: Boolean;
+  isMobileMenuOpen = false;
 
   constructor() {
     if(window.innerWidth < 1450){
@@ -22,6 +24,18 @@ export class AppComponent {
       this.isDesktop = false;
     } else {
       this.isDesktop = true;
+    }
+  }
+
+  openMobileMenu(){
+    if(this.isMobileMenuOpen){
+      console.log('caught true')
+      this.mobileMenu.nativeElement.className = "bg-blue-300 text-white flex-col justify-end px-8 hidden";
+      this.isMobileMenuOpen = false;
+    } else{
+      console.log('caught false')
+      this.mobileMenu.nativeElement.className = "bg-blue-300 text-white flex-col justify-end px-8 block";
+      this.isMobileMenuOpen = true;
     }
   }
 }
