@@ -50,9 +50,79 @@
       src="../../../assets/hero_logo@3x.png"
     />
 </div>
-<div id='about' class="h-screen border-green-400 border-4">about</div>
-<div id='learn' class="h-screen border-yellow-400 border-4">learn more</div>
-<div id='events' class="h-screen border-purple-400 border-4">events</div>
+<div id='about' class="border-green-400 border-4 lg:h-screen h-auto flex flex-col items-center justify-start">
+  <div class=" mt-6">
+    <p class="text-4xl uppercase font-bold text-center tracking-wider">
+      About
+    </p>
+  </div>
+
+  <div
+    class="lg:w-11/12 w-full mt-6 px-6 pb-6 flex lg:flex-row flex-col justify-center items-center"
+  >
+    <app-about-tile-mini
+      [className]="'w-11/12 mb-12 lg:mb-0 lg:mx-12'"
+      title="Title"
+      description="We are a women’s health organization dedicated to ensuring equity for
+      all menstruators on campus and in the community by increasing
+      awareness, eliminating stigma, and providing access"
+    ></app-about-tile-mini>
+
+    <app-about-tile-mini
+      [className]="'w-11/12 my-12 lg:my-0 lg:mx-12'"
+      title="Title"
+      description="We are a women’s health organization dedicated to ensuring equity for
+      all menstruators on campus and in the community by increasing
+      awareness, eliminating stigma, and providing access"
+    ></app-about-tile-mini>
+
+    <app-about-tile-mini
+      [className]="'w-11/12  mt-12 lg:mt-0 lg:mx-12'"
+      title="Title"
+      description="We are a women’s health organization dedicated to ensuring equity for
+    all menstruators on campus and in the community by increasing
+    awareness, eliminating stigma, and providing access"
+    ></app-about-tile-mini>
+  </div>
+</div>
+<div id='learn' class="border-yellow-400 border-4 h-auto">
+  <app-learn-more></app-learn-more>
+</div>
+<div id='events' class="border-purple-400 border-4 h-auto flex flex-col justify-center items-center ">
+      <div class="mt-24">
+        <p
+          class="text-4xl uppercase font-bold text-center tracking-wider"
+        >
+          Events
+        </p>
+      </div>
+      <div
+        id="calendar-notice"
+        class="lg:hidden md:hidden block mt-16 text-center"
+      >
+        <h1>
+          Sorry! <br />Events calendar is only visible in the Desktop version.
+        </h1>
+        <h2>
+          Or you can view the public
+          <a
+            target="_blank"
+            href="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
+            class="font-bold text-blue-600 hover:underline"
+            >Google Calendar</a
+          >
+        </h2>
+      </div>
+
+      <!-- <iframe
+        id="period-calendar"
+        class="mt-12 mb-24 w-10/12 h-64"
+        src="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
+        style="border-width: 0"
+        frameborder="0"
+        scrolling="no"
+      ></iframe> -->
+</div>
 
 
 

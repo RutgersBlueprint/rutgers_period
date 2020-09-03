@@ -11,7 +11,22 @@
   background-size: cover; 
 }
 
+#period-calendar {
+}
 
+@media (max-width: 900px) {
+  #period-calendar {
+    visibility: hidden;
+  }
+
+  #calendar-notice {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1090px) {
+
+}
 
 
 
