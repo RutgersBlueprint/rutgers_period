@@ -24,23 +24,25 @@
   </div>
 </nav>
 
-<nav class="bg-blue-400 text-white h-32 sticky top-0 flex flex-row justify-between px-8" *ngIf="!isDesktop">
-  <p class="text-center text-5xl self-center">RU PEP</p>
-  <button class="" (click)="openMobileMenu()"><fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon></button>
+<nav class="bg-blue-400 text-white h-auto sticky top-0 flex flex-col justify-center" *ngIf="!isDesktop">
+  <div class="flex flex-row justify-between px-8">
+    <p class="text-center text-5xl self-center">RU PEP</p>
+    <button class="" (click)="openMobileMenu()"><fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon></button>
+  </div>
+  <div #mobileMenu id="mobile-menu" class="bg-blue-300 text-white px-8 hidden" *ngIf="!isDesktop">
+    <ul>
+      <li>
+        <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'about'" [ngxScrollToOffset]="-130">about</button>
+      </li>
+      <li>
+        <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'learn'" [ngxScrollToOffset]="-130">learn more</button>
+      </li>
+      <li>
+        <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'events'" [ngxScrollToOffset]="-130">events</button>
+      </li>
+    </ul>
+  </div>
 </nav>
-<div #mobileMenu id="mobile-menu" class="bg-blue-300 text-white flex-col justify-end px-8 hidden" *ngIf="!isDesktop">
-  <ul>
-    <li>
-      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'about'" [ngxScrollToOffset]="-130">about</button>
-    </li>
-    <li>
-      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'learn'" [ngxScrollToOffset]="-130">learn more</button>
-    </li>
-    <li>
-      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'events'" [ngxScrollToOffset]="-130">events</button>
-    </li>
-  </ul>
-</div>
 
 <div id='landing' class="h-screen border-red-400 border-4 pt-32 flex flex-row justify-center items-start">
     <img

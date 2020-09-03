@@ -30,11 +30,11 @@ export class AppComponent {
   openMobileMenu(){
     if(this.isMobileMenuOpen){
       console.log('caught true')
-      this.mobileMenu.nativeElement.className = "bg-blue-300 text-white flex-col justify-end px-8 hidden";
+      this.mobileMenu.nativeElement.className = "bg-blue-300 text-white px-8 hidden";
       this.isMobileMenuOpen = false;
     } else{
       console.log('caught false')
-      this.mobileMenu.nativeElement.className = "bg-blue-300 text-white flex-col justify-end px-8 block";
+      this.mobileMenu.nativeElement.className = "bg-blue-300 text-white px-8 block";
       this.isMobileMenuOpen = true;
     }
   }
