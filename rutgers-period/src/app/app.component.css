@@ -11,16 +11,14 @@
   background-size: cover; 
 }
 
-#period-calendar {
-}
-
 @media (max-width: 900px) {
   #period-calendar {
     visibility: hidden;
+    height: 0px;
   }
 
   #calendar-notice {
-    visibility: visible;
+    display: block;
   }
 }
 

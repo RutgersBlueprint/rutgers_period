@@ -13,48 +13,96 @@
       <div class="bg-green-200 m-4 w-3/12">2</div>
     </div>
   </div>
-  <div class="bg-green-400 w-6/12 m-4 text-center flex flex-row items-end justify-end">
-      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'about'" [ngxScrollToOffset]="-195">about</button>
-      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'learn'" [ngxScrollToOffset]="-195">
-        learn more
-      </button>
-      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'events'" [ngxScrollToOffset]="-195">
-        events
-      </button>
+  <div
+    class="bg-green-400 w-6/12 m-4 text-center flex flex-row items-end justify-end"
+  >
+    <button
+      class="mx-4 text-3xl uppercase"
+      [ngxScrollTo]="'about'"
+      [ngxScrollToOffset]="-195"
+    >
+      about
+    </button>
+    <button
+      class="mx-4 text-3xl uppercase"
+      [ngxScrollTo]="'learn'"
+      [ngxScrollToOffset]="-195"
+    >
+      learn more
+    </button>
+    <button
+      class="mx-4 text-3xl uppercase"
+      [ngxScrollTo]="'events'"
+      [ngxScrollToOffset]="-195"
+    >
+      events
+    </button>
   </div>
 </nav>
 
-<nav class="bg-blue-400 text-white h-auto sticky top-0 flex flex-col justify-center" *ngIf="!isDesktop">
+<nav
+  class="bg-blue-400 text-white h-auto sticky top-0 flex flex-col justify-center"
+  *ngIf="!isDesktop"
+>
   <div class="flex flex-row justify-between px-8">
     <p class="text-center text-5xl self-center">RU PEP</p>
-    <button class="" (click)="openMobileMenu()"><fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon></button>
+    <button class="" (click)="openMobileMenu()">
+      <fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon>
+    </button>
   </div>
-  <div #mobileMenu id="mobile-menu" class="bg-blue-300 text-white px-8 hidden" *ngIf="!isDesktop">
+  <div
+    #mobileMenu
+    id="mobile-menu"
+    class="bg-blue-300 text-white px-8 hidden"
+    *ngIf="!isDesktop"
+  >
     <ul>
       <li>
-        <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'about'" [ngxScrollToOffset]="-130">about</button>
+        <button
+          class="mx-4 text-3xl uppercase"
+          [ngxScrollTo]="'about'"
+          [ngxScrollToOffset]="-130"
+        >
+          about
+        </button>
       </li>
       <li>
-        <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'learn'" [ngxScrollToOffset]="-130">learn more</button>
+        <button
+          class="mx-4 text-3xl uppercase"
+          [ngxScrollTo]="'learn'"
+          [ngxScrollToOffset]="-130"
+        >
+          learn more
+        </button>
       </li>
       <li>
-        <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'events'" [ngxScrollToOffset]="-130">events</button>
+        <button
+          class="mx-4 text-3xl uppercase"
+          [ngxScrollTo]="'events'"
+          [ngxScrollToOffset]="-130"
+        >
+          events
+        </button>
       </li>
     </ul>
   </div>
 </nav>
 
-<div id='landing' class="h-screen border-red-400 border-4 pt-32 flex flex-row justify-center items-start">
-    <img
-      class="lg:w-6/12 md:w-6/12 w-10/12"
-      src="../../../assets/hero_logo@3x.png"
-    />
+<div
+  id="landing"
+  class="h-screen border-red-400 border-4 pt-32 flex flex-row justify-center items-start"
+>
+  <img
+    class="lg:w-6/12 md:w-6/12 w-10/12"
+    src="../../../assets/hero_logo@3x.png"
+  />
 </div>
-<div id='about' class="border-green-400 border-4 lg:h-screen h-auto flex flex-col items-center justify-start">
-  <div class=" mt-6">
-    <p class="text-4xl uppercase font-bold text-center tracking-wider">
-      About
-    </p>
+<div
+  id="about"
+  class="border-green-400 border-4 lg:h-screen h-auto flex flex-col items-center justify-start"
+>
+  <div class="mt-6">
+    <p class="text-4xl uppercase font-bold text-center tracking-wider">About</p>
   </div>
 
   <div
@@ -85,44 +133,88 @@
     ></app-about-tile-mini>
   </div>
 </div>
-<div id='learn' class="border-yellow-400 border-4 h-auto">
+<div id="learn" class="border-yellow-400 border-4 h-auto">
   <app-learn-more></app-learn-more>
 </div>
-<div id='events' class="border-purple-400 border-4 h-auto flex flex-col justify-center items-center ">
-      <div class="mt-24">
-        <p
-          class="text-4xl uppercase font-bold text-center tracking-wider"
-        >
-          Events
-        </p>
-      </div>
-      <div
-        id="calendar-notice"
-        class="lg:hidden md:hidden block mt-16 text-center"
+<div
+  id="events"
+  class="border-purple-400 border-4 h-auto flex flex-col justify-center items-center"
+>
+  <div class="mt-24">
+    <p class="text-4xl uppercase font-bold text-center tracking-wider">
+      Events
+    </p>
+  </div>
+  <div id="calendar-notice" class="hidden mt-16 text-center">
+    <h1>
+      Sorry! <br />Events calendar is only visible in the Desktop version.
+    </h1>
+    <h2>
+      Or you can view the public
+      <a
+        target="_blank"
+        href="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
+        class="font-bold text-blue-600 hover:underline"
+        >Google Calendar</a
       >
-        <h1>
-          Sorry! <br />Events calendar is only visible in the Desktop version.
-        </h1>
-        <h2>
-          Or you can view the public
-          <a
-            target="_blank"
-            href="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
-            class="font-bold text-blue-600 hover:underline"
-            >Google Calendar</a
-          >
-        </h2>
-      </div>
-
-      <!-- <iframe
-        id="period-calendar"
-        class="mt-12 mb-24 w-10/12 h-64"
-        src="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
-        style="border-width: 0"
-        frameborder="0"
-        scrolling="no"
-      ></iframe> -->
+    </h2>
+  </div>
+  <div class="w-10/12">
+    <iframe
+      id="period-calendar"
+      class="mt-12 mb-24"
+      src="https://calendar.google.com/calendar/embed?src=ruperiod%40gmail.com&ctz=America%2FNew_York"
+      style="border-width: 0"
+      frameborder="0"
+      scrolling="no"
+      width="100%"
+      height="800px"
+    ></iframe>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
