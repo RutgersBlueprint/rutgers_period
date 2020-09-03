@@ -1,7 +1,15 @@
 #mobile-menu {
-  transition-duration: 1s;
+  transition-duration: height 1s ease;
 }
 
+#landing {
+  background-image: url("/assets/Group\ 21.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
 
 
 
