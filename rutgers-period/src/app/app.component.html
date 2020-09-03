@@ -1,62 +1,36 @@
-<div
-  class=" bg-blue-400 text-white h-48 sticky top-0"
+<nav
+  class="bg-blue-400 text-white flex flex-row h-48 sticky top-0 justify-between"
   *ngIf="isDesktop"
 >
-nav
-</div>
+  <div class="bg-green-400 w-6/12 m-4 flex flex-row">
+    <p class="bg-blue-200 text-center text-5xl w-4/12 m-4 self-center">
+      RU PEP
+    </p>
+    <div
+      class="bg-blue-200 text-center w-8/12 m-4"
+    >
+      content
+    </div>
+  </div>
+  <div class="bg-green-400 w-6/12 m-4 text-center flex flex-row items-end justify-end">
+      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'about'" [ngxScrollToOffset]="-195">about</button>
+      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'learn'" [ngxScrollToOffset]="-195">
+        learn more
+      </button>
+      <button class="mx-4 text-3xl uppercase" [ngxScrollTo]="'events'" [ngxScrollToOffset]="-195">
+        events
+      </button>
+  </div>
+</nav>
 
-<div
-  class=" bg-blue-400 text-white h-48 sticky top-0"
-  *ngIf="!isDesktop"
->
+<nav class="bg-blue-400 text-white h-48 sticky top-0" *ngIf="!isDesktop">
   nav mobile
-</div>
+</nav>
 
-<div class=" h-screen border-red-400 border-4">landing</div>
-<div class="h-screen border-green-400 border-4">about</div>
-<div class="h-screen border-yellow-400 border-4">learn more</div>
-<div class=" h-screen border-purple-400 border-4">events</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="h-screen border-red-400 border-4">landing</div>
+<div id='about' class="h-screen border-green-400 border-4">about</div>
+<div id='learn' class="h-screen border-yellow-400 border-4">learn more</div>
+<div id='events' class="h-screen border-purple-400 border-4">events</div>
 
 
 
