@@ -1,50 +1,14 @@
-/* all custom css styles will be found here */
-/* all other styling will be done with Tailwind library in-line css */
-
-/* TAILWIND CODE FORMAT
-  - Tailwind styling will be found in every ____.component.html file
-  - Tailwind styling should be of the form:
-    - class = " CUSTOM-CSS-CLASS WIDTH HEIGHT MARGIN PADDING FLEX FLEX-OPTIONS... OTHER-STYLING-OPTIONS..."
-    - example... class = "my-custom-class w-full h-64 mt-6 mr-4 px-12 flex flex-row justify-center text-xl bg-blue-500"
-*/
-
-button:focus {
-  outline: 0;
-}
-
-#period-logo {
-  height: 125px;
-}
-
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
-.period-icons {
-  visibility: visible;
+button {
+  outline-style: none;
 }
 
-.period-nav-right button {
-  outline: none;
-}
-
-.period-group-background-image {
-  background-image: url("/assets/Group\ 21.png");
-  background-repeat: no-repeat;
-}
-
-.period-calendar {
-  width: 1100px;
-  height: 700px;
-}
-
-.period-standard-background-image {
-  /* background-image: url("/assets/background.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
+button:focus {
+  outline: 0;
 }
 
 .period-red {
@@ -55,61 +19,7 @@ html {
   color: #f2f2f7;
 }
 
-.period-learn-more-list li {
-  margin: 24px;
+.period-black {
+  color: RGB(28, 28, 30);
 }
 
-button {
-  outline-style: none;
-}
-
-@media (max-width: 900px) {
-  .period-calendar {
-    visibility: hidden;
-    width: 10px;
-    height: 10px;
-  }
-
-  #calendar-notice {
-    visibility: visible;
-  }
-}
-
-@media (max-width: 1090px) {
-  .main-menu-slider {
-    transition: height 400ms ease;
-    height: 0px;
-    overflow-y: hidden;
-  }
-
-  .main-menu-slider.expanded {
-    height: 200px;
-  }
-
-  .period-calendar {
-    width: 800px;
-    height: 400px;
-  }
-
-  .period-group-background-image {
-    height: 300px;
-  }
-
-  .period-icons {
-    visibility: hidden;
-    width: 0px;
-  }
-
-  #period-logo {
-    height: 100px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .period-group-background-image {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
