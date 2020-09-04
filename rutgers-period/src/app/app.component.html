@@ -2,15 +2,34 @@
   class="bg-blue-400 text-white flex flex-row h-48 sticky top-0 justify-between"
   *ngIf="isDesktop"
 >
-  <div class="bg-green-400 w-6/12 m-4 flex flex-row">
+  <div class="bg-green-400 w-full m-4 flex flex-row">
     <p class="bg-blue-200 text-center text-5xl w-4/12 m-4 self-center">
       RU PEP
     </p>
     <div
       class="bg-blue-200 text-center w-8/12 m-4 flex flex-row items-center justify-start"
     >
-      <div class="bg-green-200 m-4 w-3/12">1</div>
-      <div class="bg-green-200 m-4 w-3/12">2</div>
+      <div class="bg-green-200 m-4 w-auto period-icons">
+        <a
+        href="https://www.instagram.com/ruperiod"
+        target="_blank"
+        class="socialButton flex flex-row justify-center items-center"
+        ><img
+          class="w-16 h-full mr-6"
+          src="../../../assets/instagram_logo.png"
+        /><span class="font-bold">https://www.instagram.com/ruperiod</span></a
+      >
+      </div>
+      <div class="bg-green-200 m-4 w-auto period-icons">
+        <a
+        href="mailto:ruperiod@gmail.com"
+        class="socialButton flex flex-row justify-center items-center"
+        ><img
+          class="w-16 h-full mr-6"
+          src="../../../assets/email_logo.png"
+        /><span class="font-bold">ruperiod@gmail.com</span></a
+      >
+      </div>
     </div>
   </div>
   <div
@@ -313,7 +332,7 @@
       <a
         href="https://www.instagram.com/ruperiod"
         target="_blank"
-        class="emailButton flex flex-row justify-center items-center"
+        class="socialButton flex flex-row justify-center items-center"
         ><img
           class="w-16 h-full mr-6"
           src="../../../assets/instagram_logo.png"
@@ -321,7 +340,7 @@
       >
       <a
         href="mailto:ruperiod@gmail.com"
-        class="emailButton flex flex-row justify-center items-center"
+        class="socialButton flex flex-row justify-center items-center"
         ><img
           class="w-16 h-full mr-6"
           src="../../../assets/email_logo.png"
