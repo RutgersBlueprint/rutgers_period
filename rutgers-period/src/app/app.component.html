@@ -3,9 +3,11 @@
   *ngIf="isDesktop"
 >
   <div class="bg-green-400 w-full m-4 flex flex-row">
-    <p class="bg-blue-200 text-center text-5xl w-4/12 m-4 self-center font-bold uppercase">
-      ru pep
-    </p>
+    <button
+      class="bg-blue-200 text-center text-5xl w-4/12 m-4 self-center font-bold uppercase"
+      [ngxScrollTo]="'landing'"
+      [ngxScrollToOffset]="-195"
+    >ru pep</button>
     <div
       class="bg-blue-200 text-center w-8/12 m-4 flex flex-row items-center justify-start"
     >
@@ -16,8 +18,9 @@
         target="_blank"
         class="socialButton flex flex-row justify-center items-center"
         ><img
+        id="instagramImage"
           class="w-16 h-full mr-6"
-          src="../../../assets/instagram_logo.png"
+          src="../../../assets/instagram_logo_1.png"
         /><span class="font-bold">https://www.instagram.com/ruperiod</span></a
       >
       </div>
@@ -27,8 +30,9 @@
         href="mailto:ruperiod@gmail.com"
         class="socialButton flex flex-row justify-center items-center"
         ><img
+        id="emailImage"
           class="w-16 h-full mr-6"
-          src="../../../assets/email_logo.png"
+          src="../../../assets/email_logo_1.png"
         /><span class="font-bold">ruperiod@gmail.com</span></a
       >
       </div>
@@ -62,11 +66,15 @@
 </nav>
 
 <nav
-  class="bg-blue-400 text-white h-auto sticky top-0 flex flex-col justify-center"
+  class="bg-blue-400 h-auto sticky top-0 flex flex-col justify-center shadow-xl"
   *ngIf="!isDesktop"
 >
   <div class="flex flex-row justify-between px-8">
-    <p class="text-center text-5xl self-center">RU PEP</p>
+    <button
+      class="text-center text-5xl self-center font-bold uppercase"
+      [ngxScrollTo]="'landing'"
+      [ngxScrollToOffset]="-130"
+    >ru pep</button>
     <button class="" (click)="openMobileMenu()">
       <fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon>
     </button>
@@ -74,13 +82,13 @@
   <div
     #mobileMenu
     id="mobile-menu"
-    class="bg-blue-300 text-white px-8 hidden"
+    class="bg-blue-300 px-8 hidden"
     *ngIf="!isDesktop"
   >
     <ul>
       <li>
         <button
-          class="mx-4 text-3xl uppercase"
+          class="mx-4 text-3xl uppercase period-black"
           [ngxScrollTo]="'about'"
           [ngxScrollToOffset]="-130"
         >
@@ -89,7 +97,7 @@
       </li>
       <li>
         <button
-          class="mx-4 text-3xl uppercase"
+          class="mx-4 text-3xl uppercase period-black"
           [ngxScrollTo]="'learn'"
           [ngxScrollToOffset]="-130"
         >
@@ -98,12 +106,25 @@
       </li>
       <li>
         <button
-          class="mx-4 text-3xl uppercase"
+          class="mx-4 text-3xl uppercase period-black"
           [ngxScrollTo]="'events'"
           [ngxScrollToOffset]="-130"
         >
           events
         </button>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/ruperiod"
+          target="_blank"
+          class="mx-4 text-3xl uppercase period-black"
+          >instagram</a>
+      </li>
+      <li>
+        <a
+          href="mailto:ruperiod@gmail.com"
+          class="mx-4 text-3xl uppercase period-black"
+          >email</a>
       </li>
     </ul>
   </div>

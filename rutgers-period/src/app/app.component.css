@@ -40,6 +40,24 @@
   transition: all 1s;
 }
 
+#instagramImage {
+  background: #ef3b3c;
+  border-radius: 50px;
+}
+
+#emailImage {
+  background: #ef3b3c;
+  border-radius: 50px;
+}
+
+#instaButton:hover #instagramImage {
+  background: transparent;
+}
+
+#emailButton:hover #emailImage {
+  background: transparent;
+}
+
 #instaButton:hover span {
   right: 0;
   visibility: visible;
