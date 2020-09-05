@@ -20,6 +20,8 @@
   background: transparent;
   width: auto;
   border-radius: 50px;
+  transition: all 1s;
+
 }
 
 .socialButton:hover {
