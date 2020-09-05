@@ -11,15 +11,19 @@ button:focus {
   outline: 0;
 }
 
-.period-red {
+.period-red-text {
   color: #ef3b3c;
 }
 
-.period-white {
+.period-white-text {
   color: #f2f2f7;
 }
 
-.period-black {
+.period-white-bg {
+  background-color: #fafafa;
+}
+
+.period-black-text {
   color: RGB(28, 28, 30);
 }
 
