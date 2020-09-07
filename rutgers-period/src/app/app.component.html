@@ -5,59 +5,57 @@
   <div class="w-full m-4 flex flex-row">
     <button
       class="nav-dt-button text-center text-5xl mx-6 w-auto self-center font-bold uppercase"
-      [ngxScrollTo]="'landing'"
+      [ngxScrollTo]="landing"
       [ngxScrollToOffset]="-195"
-    >ru pep</button>
-    <div
-      class=" text-center w-8/12 flex flex-row items-center justify-start"
     >
+      ru pep
+    </button>
+    <div class="text-center w-8/12 flex flex-row items-center justify-start">
       <div class="m-2 w-auto">
         <a
-        id="instaButton"
-        href="https://www.instagram.com/ruperiod"
-        target="_blank"
-        class="socialButton flex flex-row justify-center items-center"
-        ><img
-        id="instagramImage"
-          class="w-16 h-full mr-6"
-          src="../../../assets/instagram_logo_1.png"
-        /><span class="font-bold">https://www.instagram.com/ruperiod</span></a
-      >
+          id="instaButton"
+          href="https://www.instagram.com/ruperiod"
+          target="_blank"
+          class="socialButton flex flex-row justify-center items-center"
+          ><img
+            id="instagramImage"
+            class="w-16 h-full mr-6"
+            src="../../../assets/instagram_logo_1.png"
+          /><span class="font-bold">https://www.instagram.com/ruperiod</span></a
+        >
       </div>
       <div class="m-2 w-auto">
         <a
-        id="emailButton"
-        href="mailto:ruperiod@gmail.com"
-        class="socialButton flex flex-row justify-center items-center"
-        ><img
-        id="emailImage"
-          class="w-16 h-full mr-6"
-          src="../../../assets/email_logo_1.png"
-        /><span class="font-bold">ruperiod@gmail.com</span></a
-      >
+          id="emailButton"
+          href="mailto:ruperiod@gmail.com"
+          class="socialButton flex flex-row justify-center items-center"
+          ><img
+            id="emailImage"
+            class="w-16 h-full mr-6"
+            src="../../../assets/email_logo_1.png"
+          /><span class="font-bold">ruperiod@gmail.com</span></a
+        >
       </div>
     </div>
   </div>
-  <div
-    class="w-6/12 m-4 text-center flex flex-row items-end justify-end"
-  >
+  <div class="w-6/12 m-4 text-center flex flex-row items-end justify-end">
     <button
       class="nav-dt-button mx-4 text-3xl font-bold uppercase"
-      [ngxScrollTo]="'about'"
+      [ngxScrollTo]="about"
       [ngxScrollToOffset]="-195"
     >
       about
     </button>
     <button
       class="nav-dt-button mx-4 text-3xl font-bold uppercase"
-      [ngxScrollTo]="'learn'"
+      [ngxScrollTo]="learn"
       [ngxScrollToOffset]="-195"
     >
       learn more
     </button>
     <button
       class="nav-dt-button mx-4 text-3xl font-bold uppercase"
-      [ngxScrollTo]="'events'"
+      [ngxScrollTo]="events"
       [ngxScrollToOffset]="-195"
     >
       events
@@ -72,24 +70,21 @@
   <div class="flex flex-row justify-between px-8">
     <button
       class="text-center text-5xl self-center font-bold uppercase"
-      [ngxScrollTo]="'landing'"
+      [ngxScrollTo]="landing"
       [ngxScrollToOffset]="-130"
-    >ru pep</button>
+    >
+      ru pep
+    </button>
     <button class="" (click)="openMobileMenu()">
       <fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon>
     </button>
   </div>
-  <div
-    #mobileMenu
-    id="mobile-menu"
-    class="px-8 hidden"
-    *ngIf="!isDesktop"
-  >
+  <div #mobileMenu id="mobile-menu" class="px-8 hidden" *ngIf="!isDesktop">
     <ul>
       <li>
         <button
           class="mx-4 text-3xl uppercase period-black-text"
-          [ngxScrollTo]="'about'"
+          [ngxScrollTo]="about"
           [ngxScrollToOffset]="-130"
         >
           about
@@ -98,7 +93,7 @@
       <li>
         <button
           class="mx-4 text-3xl uppercase period-black-text"
-          [ngxScrollTo]="'learn'"
+          [ngxScrollTo]="learn"
           [ngxScrollToOffset]="-130"
         >
           learn more
@@ -107,7 +102,7 @@
       <li>
         <button
           class="mx-4 text-3xl uppercase period-black-text"
-          [ngxScrollTo]="'events'"
+          [ngxScrollTo]="events"
           [ngxScrollToOffset]="-130"
         >
           events
@@ -118,19 +113,22 @@
           href="https://www.instagram.com/ruperiod"
           target="_blank"
           class="mx-4 text-3xl uppercase period-black-text"
-          >instagram</a>
+          >instagram</a
+        >
       </li>
       <li>
         <a
           href="mailto:ruperiod@gmail.com"
           class="mx-4 text-3xl uppercase period-black-text"
-          >email</a>
+          >email</a
+        >
       </li>
     </ul>
   </div>
 </nav>
 
 <div
+  #landing
   id="landing"
   class="h-screen pt-32 flex flex-row justify-center items-start period-white-bg"
 >
@@ -140,8 +138,9 @@
   />
 </div>
 <div
+  #about
   id="about"
-  class=" lg:h-screen h-auto flex flex-col items-center justify-start period-white-bg"
+  class="lg:h-screen h-auto flex flex-col items-center justify-start period-white-bg"
 >
   <div class="mt-16">
     <p class="text-4xl uppercase font-bold text-center tracking-wider">About</p>
@@ -175,12 +174,13 @@
     ></app-about-tile-mini>
   </div>
 </div>
-<div id="learn" class=" h-auto m-0 period-white-bg">
+<div #learn id="learn" class="h-auto m-0 period-white-bg">
   <app-learn-more></app-learn-more>
 </div>
 <div
+  #events
   id="events"
-  class=" h-auto flex flex-col justify-center items-center period-white-bg"
+  class="h-auto flex flex-col justify-center items-center period-white-bg"
 >
   <div class="mt-16">
     <p class="text-4xl uppercase font-bold text-center tracking-wider">
@@ -214,6 +214,57 @@
     ></iframe>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
