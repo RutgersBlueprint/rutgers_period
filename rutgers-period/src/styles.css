@@ -1,6 +1,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  background-color: #f2f2f7;
 }
 
 button {
@@ -20,7 +21,7 @@ button:focus {
 }
 
 .period-white-bg {
-  background-color: #fafafa;
+  background-color: #f2f2f7;
 }
 
 .period-black-text {
